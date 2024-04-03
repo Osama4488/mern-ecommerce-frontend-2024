@@ -8,6 +8,7 @@ const Shipping = lazy(() => import("./pages/shipping"));
 const Login = lazy(() => import("./pages/login"));
 import Loader from "./components/loader";
 import Header from "./components/header";
+import Orders from "./pages/orders";
 
 // Admin Dashboard
 
@@ -47,6 +48,7 @@ const App = () => {
 
                     {/* Logged In User Routes */}
                     <Route path="/shipping" element={<Shipping />} />
+                    <Route path="/orders" element={<Orders />} />
 
                     {/* Admin Routes */}
                     <Route
